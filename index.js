@@ -45,8 +45,6 @@ async function checkWeather(city) {
     default:
       break;
   }
-  console.log(data)
-
   document.querySelector(".weather").style.display = "block"
 
 }
