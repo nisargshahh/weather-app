@@ -84,6 +84,7 @@ body {
 
 .details{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
@@ -117,3 +118,47 @@ body {
     display: none;
 }
 
+.heading{
+    margin-bottom: 40px;
+}
+
+.heading h1{
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 480px) {
+    .search input{
+        margin-right: 10px;  
+        height: 60px;
+        width: 60%;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 470px;
+        border-radius: 20px;
+        padding: 30px 25px;
+    }
+
+    .details{
+        flex-direction: column;
+    }
+
+    .col{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .heading{
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 350px){
+    .details{
+        align-items: flex-start;
+    }
+}
